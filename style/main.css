@@ -12,7 +12,7 @@ header{
     box-shadow: 0px 1px 3px #d5d5d5;
     font-size: 18px;
 }
-.header{
+.header, .footer{
     height: 100%;
     max-width: 940px;
     display: flex;
@@ -39,13 +39,11 @@ header{
     position: relative;
 }
 .caontacts-text{
-    
     padding-bottom: 5px;
     color: #32c3e5;
     font-weight: bold;
     border-bottom: 2px dotted #32c3e5;
 }
-
 .contacts-hide {
     display: none;
 }
@@ -83,27 +81,76 @@ header{
 }
 .contacts-hide_item:hover{
     background-color: #ccc;
+    cursor: pointer;
 }
 main{
-    min-width: 940px;
+    height: calc(100vh - 80px - 50px);
+    max-width: 940px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 nav{
-    max-width: 200px;
     height: 100%;
 }
 ul.menu{
+    margin: 0;
+    padding: 0;
+    margin-top: 26px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
     list-style-type: none;
-    width: 100%;
 }
 .menu-items{
-    padding: 30px 25px;
+    margin-bottom: 25px;
     font-size: 18px;
+}
+.menu-items_link{
+    display: block;
+    color: #414141;
+    border-right: solid 4px transparent;
+    text-align: end;
+    padding: 10px 20px 10px 0px;
+}
+.menu-items_link:hover {
+    border-right: solid 4px #33c2e4;
+    color: #32c3e5;
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: #414141;
+}
+.social-menu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+.social-item{
+    height: 100%;
+    margin-left: 8px;
+}
+.social-item_link{
+    border-radius: 50%;
+    background-color: #9c9c9c;
+    padding: 8px;
+    color: #414141;
+    font-size: 20px;
+}
+.social-item_link:hover{
+    background-color: #5d99c3;
+
+}
+
+.image{
+    width: 340px;
+    height: 100%;
+}
+.textInfo{
+    width: 385px;
+    height: 100%;
 }
