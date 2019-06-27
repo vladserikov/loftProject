@@ -1,3 +1,8 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
 body {
     background-color: #f6f6f6;
     font-family: 'Fira Sans',sans-serif;
@@ -84,7 +89,7 @@ header{
     cursor: pointer;
 }
 main{
-    height: calc(100vh - 80px - 50px);
+    min-height: calc(100% - 50px - 80px);
     max-width: 940px;
     margin: 0 auto;
     display: flex;
@@ -93,6 +98,7 @@ main{
 }
 nav{
     height: 100%;
+    width: 218px;
 }
 ul.menu{
     margin: 0;
@@ -128,10 +134,8 @@ footer{
     padding: 0;
     display: flex;
     list-style: none;
-    height: 100%;
 }
 .social-item{
-    height: 100%;
     margin-left: 8px;
 }
 .social-item_link{
@@ -143,14 +147,4 @@ footer{
 }
 .social-item_link:hover{
     background-color: #5d99c3;
-
-}
-
-.image{
-    width: 340px;
-    height: 100%;
-}
-.textInfo{
-    width: 385px;
-    height: 100%;
 }
